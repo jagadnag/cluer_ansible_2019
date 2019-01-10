@@ -1,0 +1,15 @@
+---
+- hosts: routers
+  name: Run show command
+  gather_facts: no
+
+  tasks:
+    - name: run show command
+      ios_command:
+        commands:
+          - show version
+      register: cisco_output
+
+    - name: PRINT OUTPUT TO SCREEN
+      debug:
+        var: cisco_output.stdout

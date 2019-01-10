@@ -1,0 +1,11 @@
+---
+- hosts: nxos
+  name: Configure Vlan
+  gather_facts: no
+
+  tasks:
+    - name: NXOS Vlan config
+      nxos_vlan:
+        vlan_id: 100
+        admin_state: up
+        name: ansible_vlan

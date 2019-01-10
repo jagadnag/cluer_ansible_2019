@@ -1,0 +1,10 @@
+---
+- hosts: nxos
+  name: backup router configurations
+  gather_facts: no
+
+  tasks:
+    - name: run multiple commands on remote nodes
+      nxos_command:
+        commands:
+          - show version

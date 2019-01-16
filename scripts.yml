@@ -1,0 +1,1815 @@
+Hit:3 http://nova.clouds.archive.ubuntu.com/ubuntu xenial InRelease
+Hit:4 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates InRelease
+Hit:5 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-backports InRelease
+Reading package lists... Done
+cisco@server-1:~$ sudo apt-get install ansible
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  libpython-stdlib libpython2.7-minimal libpython2.7-stdlib python
+  python-cffi-backend python-crypto python-cryptography python-ecdsa
+  python-enum34 python-httplib2 python-idna python-ipaddress python-jinja2
+  python-markupsafe python-minimal python-paramiko python-pkg-resources
+  python-pyasn1 python-setuptools python-six python-yaml python2.7
+  python2.7-minimal sshpass
+Suggested packages:
+  python-doc python-tk python-crypto-dbg python-crypto-doc
+  python-cryptography-doc python-cryptography-vectors python-enum34-doc
+  python-jinja2-doc doc-base python-setuptools-doc python2.7-doc binutils
+  binfmt-support
+The following NEW packages will be installed:
+  ansible libpython-stdlib libpython2.7-minimal libpython2.7-stdlib python
+  python-cffi-backend python-crypto python-cryptography python-ecdsa
+  python-enum34 python-httplib2 python-idna python-ipaddress python-jinja2
+  python-markupsafe python-minimal python-paramiko python-pkg-resources
+  python-pyasn1 python-setuptools python-six python-yaml python2.7
+  python2.7-minimal sshpass
+0 upgraded, 25 newly installed, 0 to remove and 184 not upgraded.
+Need to get 9,141 kB of archives.
+After this operation, 58.4 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://ppa.launchpad.net/ansible/ansible/ubuntu xenial/main amd64 ansible all 2.7.5-1ppa~xenial [3,922 kB]
+Get:2 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-minimal amd64 2.7.12-1ubunt                                                                                                                         u0~16.04.4 [339 kB]
+Get:3 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python2.7-minimal amd64 2.7.12-1ubuntu0~                                                                                                                         16.04.4 [1,261 kB]
+Get:4 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-minimal amd64 2.7.12-1~16.04 [28.                                                                                                                         1 kB]
+Get:5 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-stdlib amd64 2.7.12-1ubuntu                                                                                                                         0~16.04.4 [1,880 kB]
+Get:6 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python2.7 amd64 2.7.12-1ubuntu0~16.04.4                                                                                                                          [224 kB]
+Get:7 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython-stdlib amd64 2.7.12-1~16.04 [7                                                                                                                         ,768 B]
+Get:8 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python amd64 2.7.12-1~16.04 [137 kB]
+Get:9 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 python-markupsafe amd64 0.23-2build2 [15.5 kB]
+Get:10 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 python-jinja2 all 2.8-1 [109 kB]
+Get:11 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 python-yaml amd64 3.11-3build1 [105 kB]
+Get:12 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-crypto amd64 2.6.1-6ubuntu0.16.0                                                                                                                         4.3 [246 kB]
+Get:13 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 python-six all 1.10.0-3 [10.9 kB]
+Get:14 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 python-ecdsa all 0.13-2 [34.0 kB]
+Get:15 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-paramiko all 1.16.0-1ubuntu0.2 [                                                                                                                         110 kB]
+Get:16 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 python-httplib2 all 0.9.1+dfsg-1 [34.2 kB]
+Get:17 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 python-pkg-resources all 20.7.0-1 [108 kB]
+Get:18 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 python-setuptools all 20.7.0-1 [169 kB]
+Get:19 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/universe amd64 sshpass amd64 1.05-1 [10.5 kB]
+Get:20 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 python-cffi-backend amd64 1.5.2-1ubuntu1 [58.1                                                                                                                          kB]
+Get:21 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 python-enum34 all 1.1.2-1 [35.8 kB]
+Get:22 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 python-idna all 2.0-3 [35.1 kB]
+Get:23 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 python-ipaddress all 1.0.16-1 [18.0 kB]
+Get:24 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 python-pyasn1 all 0.1.9-1 [45.1 kB]
+Get:25 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-cryptography amd64 1.2.3-1ubuntu                                                                                                                         0.2 [199 kB]
+Fetched 9,141 kB in 4s (2,201 kB/s)
+Selecting previously unselected package libpython2.7-minimal:amd64.
+(Reading database ... 53931 files and directories currently installed.)
+Preparing to unpack .../libpython2.7-minimal_2.7.12-1ubuntu0~16.04.4_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.12-1ubuntu0~16.04.4) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../python2.7-minimal_2.7.12-1ubuntu0~16.04.4_amd64.deb ...
+Unpacking python2.7-minimal (2.7.12-1ubuntu0~16.04.4) ...
+Selecting previously unselected package python-minimal.
+Preparing to unpack .../python-minimal_2.7.12-1~16.04_amd64.deb ...
+Unpacking python-minimal (2.7.12-1~16.04) ...
+Selecting previously unselected package libpython2.7-stdlib:amd64.
+Preparing to unpack .../libpython2.7-stdlib_2.7.12-1ubuntu0~16.04.4_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.12-1ubuntu0~16.04.4) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../python2.7_2.7.12-1ubuntu0~16.04.4_amd64.deb ...
+Unpacking python2.7 (2.7.12-1ubuntu0~16.04.4) ...
+Selecting previously unselected package libpython-stdlib:amd64.
+Preparing to unpack .../libpython-stdlib_2.7.12-1~16.04_amd64.deb ...
+Unpacking libpython-stdlib:amd64 (2.7.12-1~16.04) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for mime-support (3.59ubuntu1) ...
+Setting up libpython2.7-minimal:amd64 (2.7.12-1ubuntu0~16.04.4) ...
+Setting up python2.7-minimal (2.7.12-1ubuntu0~16.04.4) ...
+Linking and byte-compiling packages for runtime python2.7...
+Setting up python-minimal (2.7.12-1~16.04) ...
+Selecting previously unselected package python.
+(Reading database ... 54677 files and directories currently installed.)
+Preparing to unpack .../python_2.7.12-1~16.04_amd64.deb ...
+Unpacking python (2.7.12-1~16.04) ...
+Selecting previously unselected package python-markupsafe.
+Preparing to unpack .../python-markupsafe_0.23-2build2_amd64.deb ...
+Unpacking python-markupsafe (0.23-2build2) ...
+Selecting previously unselected package python-jinja2.
+Preparing to unpack .../python-jinja2_2.8-1_all.deb ...
+Unpacking python-jinja2 (2.8-1) ...
+Selecting previously unselected package python-yaml.
+Preparing to unpack .../python-yaml_3.11-3build1_amd64.deb ...
+Unpacking python-yaml (3.11-3build1) ...
+Selecting previously unselected package python-crypto.
+Preparing to unpack .../python-crypto_2.6.1-6ubuntu0.16.04.3_amd64.deb ...
+Unpacking python-crypto (2.6.1-6ubuntu0.16.04.3) ...
+Selecting previously unselected package python-six.
+Preparing to unpack .../python-six_1.10.0-3_all.deb ...
+Unpacking python-six (1.10.0-3) ...
+Selecting previously unselected package python-ecdsa.
+Preparing to unpack .../python-ecdsa_0.13-2_all.deb ...
+Unpacking python-ecdsa (0.13-2) ...
+Selecting previously unselected package python-paramiko.
+Preparing to unpack .../python-paramiko_1.16.0-1ubuntu0.2_all.deb ...
+Unpacking python-paramiko (1.16.0-1ubuntu0.2) ...
+Selecting previously unselected package python-httplib2.
+Preparing to unpack .../python-httplib2_0.9.1+dfsg-1_all.deb ...
+Unpacking python-httplib2 (0.9.1+dfsg-1) ...
+Selecting previously unselected package python-pkg-resources.
+Preparing to unpack .../python-pkg-resources_20.7.0-1_all.deb ...
+Unpacking python-pkg-resources (20.7.0-1) ...
+Selecting previously unselected package python-setuptools.
+Preparing to unpack .../python-setuptools_20.7.0-1_all.deb ...
+Unpacking python-setuptools (20.7.0-1) ...
+Selecting previously unselected package sshpass.
+Preparing to unpack .../sshpass_1.05-1_amd64.deb ...
+Unpacking sshpass (1.05-1) ...
+Selecting previously unselected package python-cffi-backend.
+Preparing to unpack .../python-cffi-backend_1.5.2-1ubuntu1_amd64.deb ...
+Unpacking python-cffi-backend (1.5.2-1ubuntu1) ...
+Selecting previously unselected package python-enum34.
+Preparing to unpack .../python-enum34_1.1.2-1_all.deb ...
+Unpacking python-enum34 (1.1.2-1) ...
+Selecting previously unselected package python-idna.
+Preparing to unpack .../python-idna_2.0-3_all.deb ...
+Unpacking python-idna (2.0-3) ...
+Selecting previously unselected package python-ipaddress.
+Preparing to unpack .../python-ipaddress_1.0.16-1_all.deb ...
+Unpacking python-ipaddress (1.0.16-1) ...
+Selecting previously unselected package python-pyasn1.
+Preparing to unpack .../python-pyasn1_0.1.9-1_all.deb ...
+Unpacking python-pyasn1 (0.1.9-1) ...
+Selecting previously unselected package python-cryptography.
+Preparing to unpack .../python-cryptography_1.2.3-1ubuntu0.2_amd64.deb ...
+Unpacking python-cryptography (1.2.3-1ubuntu0.2) ...
+Selecting previously unselected package ansible.
+Preparing to unpack .../ansible_2.7.5-1ppa~xenial_all.deb ...
+Unpacking ansible (2.7.5-1ppa~xenial) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up libpython2.7-stdlib:amd64 (2.7.12-1ubuntu0~16.04.4) ...
+Setting up python2.7 (2.7.12-1ubuntu0~16.04.4) ...
+Setting up libpython-stdlib:amd64 (2.7.12-1~16.04) ...
+Setting up python (2.7.12-1~16.04) ...
+Setting up python-markupsafe (0.23-2build2) ...
+Setting up python-jinja2 (2.8-1) ...
+Setting up python-yaml (3.11-3build1) ...
+Setting up python-crypto (2.6.1-6ubuntu0.16.04.3) ...
+Setting up python-six (1.10.0-3) ...
+Setting up python-ecdsa (0.13-2) ...
+Setting up python-paramiko (1.16.0-1ubuntu0.2) ...
+Setting up python-httplib2 (0.9.1+dfsg-1) ...
+Setting up python-pkg-resources (20.7.0-1) ...
+Setting up python-setuptools (20.7.0-1) ...
+Setting up sshpass (1.05-1) ...
+Setting up python-cffi-backend (1.5.2-1ubuntu1) ...
+Setting up python-enum34 (1.1.2-1) ...
+Setting up python-idna (2.0-3) ...
+Setting up python-ipaddress (1.0.16-1) ...
+Setting up python-pyasn1 (0.1.9-1) ...
+Setting up python-cryptography (1.2.3-1ubuntu0.2) ...
+Setting up ansible (2.7.5-1ppa~xenial) ...
+cisco@server-1:~$
+cisco@server-1:~$
+cisco@server-1:~$ python
+Python 2.7.12 (default, Nov 12 2018, 14:36:49)
+[GCC 5.4.0 20160609] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+cisco@server-1:~$
+cisco@server-1:~$
+cisco@server-1:~$
+cisco@server-1:~$
+cisco@server-1:~$
+cisco@server-1:~$ sudo apt-get install git-core
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  git-core
+0 upgraded, 1 newly installed, 0 to remove and 184 not upgraded.
+Need to get 1,466 B of archives.
+After this operation, 8,192 B of additional disk space will be used.
+Get:1 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 git-core all 1:2.7.4-0ubuntu1.6 [1,466 B                                                                                                                         ]
+Fetched 1,466 B in 0s (2,395 B/s)
+Selecting previously unselected package git-core.
+(Reading database ... 58952 files and directories currently installed.)
+Preparing to unpack .../git-core_1%3a2.7.4-0ubuntu1.6_all.deb ...
+Unpacking git-core (1:2.7.4-0ubuntu1.6) ...
+Setting up git-core (1:2.7.4-0ubuntu1.6) ...
+cisco@server-1:~$
+cisco@server-1:~$
+cisco@server-1:~$ sudo apt-get install python-pip
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  binutils build-essential cpp cpp-5 dpkg-dev fakeroot g++ g++-5 gcc gcc-5
+  gcc-5-base libalgorithm-diff-perl libalgorithm-diff-xs-perl
+  libalgorithm-merge-perl libasan2 libatomic1 libc-dev-bin libc6 libc6-dev
+  libcc1-0 libcilkrts5 libdpkg-perl libexpat1-dev libfakeroot
+  libfile-fcntllock-perl libgcc-5-dev libgomp1 libisl15 libitm1 liblsan0
+  libmpc3 libmpx0 libpython-all-dev libpython-dev libpython2.7
+  libpython2.7-dev libquadmath0 libstdc++-5-dev libstdc++6 libtsan0 libubsan0
+  linux-libc-dev make manpages-dev python-all python-all-dev python-dev
+  python-pip-whl python-wheel python2.7-dev
+Suggested packages:
+  binutils-doc cpp-doc gcc-5-locales debian-keyring g++-multilib
+  g++-5-multilib gcc-5-doc libstdc++6-5-dbg gcc-multilib autoconf automake
+  libtool flex bison gdb gcc-doc gcc-5-multilib libgcc1-dbg libgomp1-dbg
+  libitm1-dbg libatomic1-dbg libasan2-dbg liblsan0-dbg libtsan0-dbg
+  libubsan0-dbg libcilkrts5-dbg libmpx0-dbg libquadmath0-dbg glibc-doc
+  libstdc++-5-doc make-doc
+The following NEW packages will be installed:
+  binutils build-essential cpp cpp-5 dpkg-dev fakeroot g++ g++-5 gcc gcc-5
+  libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl
+  libasan2 libatomic1 libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libdpkg-perl
+  libexpat1-dev libfakeroot libfile-fcntllock-perl libgcc-5-dev libgomp1
+  libisl15 libitm1 liblsan0 libmpc3 libmpx0 libpython-all-dev libpython-dev
+  libpython2.7 libpython2.7-dev libquadmath0 libstdc++-5-dev libtsan0
+  libubsan0 linux-libc-dev make manpages-dev python-all python-all-dev
+  python-dev python-pip python-pip-whl python-wheel python2.7-dev
+The following packages will be upgraded:
+  gcc-5-base libc6 libstdc++6
+3 upgraded, 48 newly installed, 0 to remove and 181 not upgraded.
+Need to get 71.7 MB of archives.
+After this operation, 192 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc6 amd64 2.23-0ubuntu10 [2,580 kB]
+Get:2 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 libmpc3 amd64 1.0.3-1 [39.7 kB]
+Get:3 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 gcc-5-base amd64 5.4.0-6ubuntu1~16.04.11                                                                                                                          [17.3 kB]
+Get:4 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libstdc++6 amd64 5.4.0-6ubuntu1~16.04.11                                                                                                                          [393 kB]
+Get:5 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 binutils amd64 2.26.1-1ubuntu1~16.04.7 [                                                                                                                         2,309 kB]
+Get:6 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc-dev-bin amd64 2.23-0ubuntu10 [68.7                                                                                                                          kB]
+Get:7 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-libc-dev amd64 4.4.0-141.167 [854                                                                                                                          kB]
+Get:8 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc6-dev amd64 2.23-0ubuntu10 [2,079 kB                                                                                                                         ]
+Get:9 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 libisl15 amd64 0.16.1-1 [524 kB]
+Get:10 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 cpp-5 amd64 5.4.0-6ubuntu1~16.04.11 [7,                                                                                                                         660 kB]
+Get:11 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 cpp amd64 4:5.3.1-1ubuntu1 [27.7 kB]
+Get:12 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcc1-0 amd64 5.4.0-6ubuntu1~16.04.11                                                                                                                          [38.8 kB]
+Get:13 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgomp1 amd64 5.4.0-6ubuntu1~16.04.11                                                                                                                          [55.0 kB]
+Get:14 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libitm1 amd64 5.4.0-6ubuntu1~16.04.11 [                                                                                                                         27.4 kB]
+Get:15 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libatomic1 amd64 5.4.0-6ubuntu1~16.04.1                                                                                                                         1 [8,896 B]
+Get:16 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libasan2 amd64 5.4.0-6ubuntu1~16.04.11                                                                                                                          [264 kB]
+Get:17 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 liblsan0 amd64 5.4.0-6ubuntu1~16.04.11                                                                                                                          [105 kB]
+Get:18 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libtsan0 amd64 5.4.0-6ubuntu1~16.04.11                                                                                                                          [244 kB]
+Get:19 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libubsan0 amd64 5.4.0-6ubuntu1~16.04.11                                                                                                                          [95.4 kB]
+Get:20 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcilkrts5 amd64 5.4.0-6ubuntu1~16.04.                                                                                                                         11 [40.1 kB]
+Get:21 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libmpx0 amd64 5.4.0-6ubuntu1~16.04.11 [                                                                                                                         9,748 B]
+Get:22 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libquadmath0 amd64 5.4.0-6ubuntu1~16.04                                                                                                                         .11 [131 kB]
+Get:23 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgcc-5-dev amd64 5.4.0-6ubuntu1~16.04                                                                                                                         .11 [2,229 kB]
+Get:24 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 gcc-5 amd64 5.4.0-6ubuntu1~16.04.11 [8,                                                                                                                         417 kB]
+Get:25 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 gcc amd64 4:5.3.1-1ubuntu1 [5,244 B]
+Get:26 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libstdc++-5-dev amd64 5.4.0-6ubuntu1~16                                                                                                                         .04.11 [1,426 kB]
+Get:27 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 g++-5 amd64 5.4.0-6ubuntu1~16.04.11 [8,                                                                                                                         310 kB]
+Get:28 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 g++ amd64 4:5.3.1-1ubuntu1 [1,504 B]
+Get:29 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 make amd64 4.1-6 [151 kB]
+Get:30 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libdpkg-perl all 1.18.4ubuntu1.5 [195 k                                                                                                                         B]
+Get:31 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 dpkg-dev all 1.18.4ubuntu1.5 [584 kB]
+Get:32 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 build-essential amd64 12.1ubuntu2 [4,758 B]
+Get:33 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 libfakeroot amd64 1.20.2-1ubuntu1 [25.5 kB]
+Get:34 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 fakeroot amd64 1.20.2-1ubuntu1 [61.8 kB]
+Get:35 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 libalgorithm-diff-perl all 1.19.03-1 [47.6 kB]
+Get:36 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 libalgorithm-diff-xs-perl amd64 0.04-4build1 [1                                                                                                                         1.0 kB]
+Get:37 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 libalgorithm-merge-perl all 0.08-3 [12.0 kB]
+Get:38 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libexpat1-dev amd64 2.1.0-7ubuntu0.16.0                                                                                                                         4.3 [115 kB]
+Get:39 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 libfile-fcntllock-perl amd64 0.22-3 [32.0 kB]
+Get:40 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7 amd64 2.7.12-1ubuntu0~16.0                                                                                                                         4.4 [1,071 kB]
+Get:41 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-dev amd64 2.7.12-1ubuntu0~                                                                                                                         16.04.4 [27.8 MB]
+Get:42 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython-dev amd64 2.7.12-1~16.04 [7,8                                                                                                                         40 B]
+Get:43 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython-all-dev amd64 2.7.12-1~16.04                                                                                                                          [1,006 B]
+Get:44 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 manpages-dev all 4.04-2 [2,048 kB]
+Get:45 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-all amd64 2.7.12-1~16.04 [996 B]
+Get:46 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python2.7-dev amd64 2.7.12-1ubuntu0~16.                                                                                                                         04.4 [276 kB]
+Get:47 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-dev amd64 2.7.12-1~16.04 [1,186                                                                                                                          B]
+Get:48 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-all-dev amd64 2.7.12-1~16.04 [1,                                                                                                                         016 B]
+Get:49 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 python-pip-whl all 8.1.1-2ubuntu0.4                                                                                                                          [1,110 kB]
+Get:50 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 python-pip all 8.1.1-2ubuntu0.4 [14                                                                                                                         4 kB]
+Get:51 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/universe amd64 python-wheel all 0.29.0-1 [48.0 kB]
+Fetched 71.7 MB in 8s (8,388 kB/s)
+Extracting templates from packages: 100%
+Preconfiguring packages ...
+(Reading database ... 58953 files and directories currently installed.)
+Preparing to unpack .../libc6_2.23-0ubuntu10_amd64.deb ...
+Unpacking libc6:amd64 (2.23-0ubuntu10) over (2.23-0ubuntu9) ...
+Setting up libc6:amd64 (2.23-0ubuntu10) ...
+Processing triggers for libc-bin (2.23-0ubuntu9) ...
+Selecting previously unselected package libmpc3:amd64.
+(Reading database ... 58953 files and directories currently installed.)
+Preparing to unpack .../libmpc3_1.0.3-1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.0.3-1) ...
+Preparing to unpack .../gcc-5-base_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking gcc-5-base:amd64 (5.4.0-6ubuntu1~16.04.11) over (5.4.0-6ubuntu1~16.04.5) ...
+Setting up gcc-5-base:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+(Reading database ... 58958 files and directories currently installed.)
+Preparing to unpack .../libstdc++6_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking libstdc++6:amd64 (5.4.0-6ubuntu1~16.04.11) over (5.4.0-6ubuntu1~16.04.5) ...
+Processing triggers for libc-bin (2.23-0ubuntu9) ...
+Setting up libstdc++6:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Processing triggers for libc-bin (2.23-0ubuntu9) ...
+Selecting previously unselected package binutils.
+(Reading database ... 58958 files and directories currently installed.)
+Preparing to unpack .../binutils_2.26.1-1ubuntu1~16.04.7_amd64.deb ...
+Unpacking binutils (2.26.1-1ubuntu1~16.04.7) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../libc-dev-bin_2.23-0ubuntu10_amd64.deb ...
+Unpacking libc-dev-bin (2.23-0ubuntu10) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../linux-libc-dev_4.4.0-141.167_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.4.0-141.167) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../libc6-dev_2.23-0ubuntu10_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.23-0ubuntu10) ...
+Selecting previously unselected package libisl15:amd64.
+Preparing to unpack .../libisl15_0.16.1-1_amd64.deb ...
+Unpacking libisl15:amd64 (0.16.1-1) ...
+Selecting previously unselected package cpp-5.
+Preparing to unpack .../cpp-5_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking cpp-5 (5.4.0-6ubuntu1~16.04.11) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../cpp_4%3a5.3.1-1ubuntu1_amd64.deb ...
+Unpacking cpp (4:5.3.1-1ubuntu1) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../libcc1-0_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking libcc1-0:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../libgomp1_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking libgomp1:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../libitm1_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking libitm1:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../libatomic1_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking libatomic1:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Selecting previously unselected package libasan2:amd64.
+Preparing to unpack .../libasan2_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking libasan2:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../liblsan0_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking liblsan0:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../libtsan0_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking libtsan0:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Selecting previously unselected package libubsan0:amd64.
+Preparing to unpack .../libubsan0_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking libubsan0:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Selecting previously unselected package libcilkrts5:amd64.
+Preparing to unpack .../libcilkrts5_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking libcilkrts5:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Selecting previously unselected package libmpx0:amd64.
+Preparing to unpack .../libmpx0_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking libmpx0:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../libquadmath0_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking libquadmath0:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Selecting previously unselected package libgcc-5-dev:amd64.
+Preparing to unpack .../libgcc-5-dev_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking libgcc-5-dev:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Selecting previously unselected package gcc-5.
+Preparing to unpack .../gcc-5_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking gcc-5 (5.4.0-6ubuntu1~16.04.11) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../gcc_4%3a5.3.1-1ubuntu1_amd64.deb ...
+Unpacking gcc (4:5.3.1-1ubuntu1) ...
+Selecting previously unselected package libstdc++-5-dev:amd64.
+Preparing to unpack .../libstdc++-5-dev_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking libstdc++-5-dev:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Selecting previously unselected package g++-5.
+Preparing to unpack .../g++-5_5.4.0-6ubuntu1~16.04.11_amd64.deb ...
+Unpacking g++-5 (5.4.0-6ubuntu1~16.04.11) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../g++_4%3a5.3.1-1ubuntu1_amd64.deb ...
+Unpacking g++ (4:5.3.1-1ubuntu1) ...
+Selecting previously unselected package make.
+Preparing to unpack .../archives/make_4.1-6_amd64.deb ...
+Unpacking make (4.1-6) ...
+Selecting previously unselected package libdpkg-perl.
+Preparing to unpack .../libdpkg-perl_1.18.4ubuntu1.5_all.deb ...
+Unpacking libdpkg-perl (1.18.4ubuntu1.5) ...
+Selecting previously unselected package dpkg-dev.
+Preparing to unpack .../dpkg-dev_1.18.4ubuntu1.5_all.deb ...
+Unpacking dpkg-dev (1.18.4ubuntu1.5) ...
+Selecting previously unselected package build-essential.
+Preparing to unpack .../build-essential_12.1ubuntu2_amd64.deb ...
+Unpacking build-essential (12.1ubuntu2) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../libfakeroot_1.20.2-1ubuntu1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.20.2-1ubuntu1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../fakeroot_1.20.2-1ubuntu1_amd64.deb ...
+Unpacking fakeroot (1.20.2-1ubuntu1) ...
+Selecting previously unselected package libalgorithm-diff-perl.
+Preparing to unpack .../libalgorithm-diff-perl_1.19.03-1_all.deb ...
+Unpacking libalgorithm-diff-perl (1.19.03-1) ...
+Selecting previously unselected package libalgorithm-diff-xs-perl.
+Preparing to unpack .../libalgorithm-diff-xs-perl_0.04-4build1_amd64.deb ...
+Unpacking libalgorithm-diff-xs-perl (0.04-4build1) ...
+Selecting previously unselected package libalgorithm-merge-perl.
+Preparing to unpack .../libalgorithm-merge-perl_0.08-3_all.deb ...
+Unpacking libalgorithm-merge-perl (0.08-3) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../libexpat1-dev_2.1.0-7ubuntu0.16.04.3_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.1.0-7ubuntu0.16.04.3) ...
+Selecting previously unselected package libfile-fcntllock-perl.
+Preparing to unpack .../libfile-fcntllock-perl_0.22-3_amd64.deb ...
+Unpacking libfile-fcntllock-perl (0.22-3) ...
+Selecting previously unselected package libpython2.7:amd64.
+Preparing to unpack .../libpython2.7_2.7.12-1ubuntu0~16.04.4_amd64.deb ...
+Unpacking libpython2.7:amd64 (2.7.12-1ubuntu0~16.04.4) ...
+Selecting previously unselected package libpython2.7-dev:amd64.
+Preparing to unpack .../libpython2.7-dev_2.7.12-1ubuntu0~16.04.4_amd64.deb ...
+Unpacking libpython2.7-dev:amd64 (2.7.12-1ubuntu0~16.04.4) ...
+Selecting previously unselected package libpython-dev:amd64.
+Preparing to unpack .../libpython-dev_2.7.12-1~16.04_amd64.deb ...
+Unpacking libpython-dev:amd64 (2.7.12-1~16.04) ...
+Selecting previously unselected package libpython-all-dev:amd64.
+Preparing to unpack .../libpython-all-dev_2.7.12-1~16.04_amd64.deb ...
+Unpacking libpython-all-dev:amd64 (2.7.12-1~16.04) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../manpages-dev_4.04-2_all.deb ...
+Unpacking manpages-dev (4.04-2) ...
+Selecting previously unselected package python-all.
+Preparing to unpack .../python-all_2.7.12-1~16.04_amd64.deb ...
+Unpacking python-all (2.7.12-1~16.04) ...
+Selecting previously unselected package python2.7-dev.
+Preparing to unpack .../python2.7-dev_2.7.12-1ubuntu0~16.04.4_amd64.deb ...
+Unpacking python2.7-dev (2.7.12-1ubuntu0~16.04.4) ...
+Selecting previously unselected package python-dev.
+Preparing to unpack .../python-dev_2.7.12-1~16.04_amd64.deb ...
+Unpacking python-dev (2.7.12-1~16.04) ...
+Selecting previously unselected package python-all-dev.
+Preparing to unpack .../python-all-dev_2.7.12-1~16.04_amd64.deb ...
+Unpacking python-all-dev (2.7.12-1~16.04) ...
+Selecting previously unselected package python-pip-whl.
+Preparing to unpack .../python-pip-whl_8.1.1-2ubuntu0.4_all.deb ...
+Unpacking python-pip-whl (8.1.1-2ubuntu0.4) ...
+Selecting previously unselected package python-pip.
+Preparing to unpack .../python-pip_8.1.1-2ubuntu0.4_all.deb ...
+Unpacking python-pip (8.1.1-2ubuntu0.4) ...
+Selecting previously unselected package python-wheel.
+Preparing to unpack .../python-wheel_0.29.0-1_all.deb ...
+Unpacking python-wheel (0.29.0-1) ...
+Processing triggers for libc-bin (2.23-0ubuntu9) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up libmpc3:amd64 (1.0.3-1) ...
+Setting up binutils (2.26.1-1ubuntu1~16.04.7) ...
+Setting up libc-dev-bin (2.23-0ubuntu10) ...
+Setting up linux-libc-dev:amd64 (4.4.0-141.167) ...
+Setting up libc6-dev:amd64 (2.23-0ubuntu10) ...
+Setting up libisl15:amd64 (0.16.1-1) ...
+Setting up cpp-5 (5.4.0-6ubuntu1~16.04.11) ...
+Setting up cpp (4:5.3.1-1ubuntu1) ...
+Setting up libcc1-0:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Setting up libgomp1:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Setting up libitm1:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Setting up libatomic1:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Setting up libasan2:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Setting up liblsan0:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Setting up libtsan0:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Setting up libubsan0:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Setting up libcilkrts5:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Setting up libmpx0:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Setting up libquadmath0:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Setting up libgcc-5-dev:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Setting up gcc-5 (5.4.0-6ubuntu1~16.04.11) ...
+Setting up gcc (4:5.3.1-1ubuntu1) ...
+Setting up libstdc++-5-dev:amd64 (5.4.0-6ubuntu1~16.04.11) ...
+Setting up g++-5 (5.4.0-6ubuntu1~16.04.11) ...
+Setting up g++ (4:5.3.1-1ubuntu1) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up make (4.1-6) ...
+Setting up libdpkg-perl (1.18.4ubuntu1.5) ...
+Setting up dpkg-dev (1.18.4ubuntu1.5) ...
+Setting up build-essential (12.1ubuntu2) ...
+Setting up libfakeroot:amd64 (1.20.2-1ubuntu1) ...
+Setting up fakeroot (1.20.2-1ubuntu1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up libalgorithm-diff-perl (1.19.03-1) ...
+Setting up libalgorithm-diff-xs-perl (0.04-4build1) ...
+Setting up libalgorithm-merge-perl (0.08-3) ...
+Setting up libexpat1-dev:amd64 (2.1.0-7ubuntu0.16.04.3) ...
+Setting up libfile-fcntllock-perl (0.22-3) ...
+Setting up libpython2.7:amd64 (2.7.12-1ubuntu0~16.04.4) ...
+Setting up libpython2.7-dev:amd64 (2.7.12-1ubuntu0~16.04.4) ...
+Setting up libpython-dev:amd64 (2.7.12-1~16.04) ...
+Setting up libpython-all-dev:amd64 (2.7.12-1~16.04) ...
+Setting up manpages-dev (4.04-2) ...
+Setting up python-all (2.7.12-1~16.04) ...
+Setting up python2.7-dev (2.7.12-1ubuntu0~16.04.4) ...
+Setting up python-dev (2.7.12-1~16.04) ...
+Setting up python-all-dev (2.7.12-1~16.04) ...
+Setting up python-pip-whl (8.1.1-2ubuntu0.4) ...
+Setting up python-pip (8.1.1-2ubuntu0.4) ...
+Setting up python-wheel (0.29.0-1) ...
+Processing triggers for libc-bin (2.23-0ubuntu9) ...
+cisco@server-1:~$
+cisco@server-1:~$
+cisco@server-1:~$ pip install netmiko
+Collecting netmiko
+  Downloading https://files.pythonhosted.org/packages/83/a7/2d77f332ecf44909e70002cb20dbabfe8bd7bb1c552b67a2a75349fe1                                                                                                                         598/netmiko-2.3.0.tar.gz (79kB)
+    100% |████████████████████████████████| 81kB 1.7MB/s
+Collecting paramiko>=2.4.1 (from netmiko)
+  Downloading https://files.pythonhosted.org/packages/cf/ae/94e70d49044ccc234bfdba20114fa947d7ba6eb68a2e452d89b920e62                                                                                                                         227/paramiko-2.4.2-py2.py3-none-any.whl (193kB)
+    100% |████████████████████████████████| 194kB 1.1MB/s
+Collecting scp>=0.10.0 (from netmiko)
+  Downloading https://files.pythonhosted.org/packages/50/26/bbcf64af02ae5cdde70f10fcac1b955ed6aece5de459c43feeee4d417                                                                                                                         f20/scp-0.13.0-py2.py3-none-any.whl
+Collecting pyyaml (from netmiko)
+  Downloading https://files.pythonhosted.org/packages/9e/a3/1d13970c3f36777c583f136c136f804d70f500168edc1edea6daa7200                                                                                                                         769/PyYAML-3.13.tar.gz (270kB)
+    100% |████████████████████████████████| 276kB 1.3MB/s
+Collecting pyserial (from netmiko)
+  Downloading https://files.pythonhosted.org/packages/0d/e4/2a744dd9e3be04a0c0907414e2a01a7c88bb3915cbe3c8cc06e209f59                                                                                                                         c30/pyserial-3.4-py2.py3-none-any.whl (193kB)
+    100% |████████████████████████████████| 194kB 1.0MB/s
+Collecting textfsm (from netmiko)
+  Downloading https://files.pythonhosted.org/packages/a1/0d/a1b490503545b3b4600b965eae5d44cc2b6ce27cfb44f4debc563dbb5                                                                                                                         6d3/textfsm-0.4.1.tar.gz
+Collecting enum34 (from netmiko)
+  Downloading https://files.pythonhosted.org/packages/c5/db/e56e6b4bbac7c4a06de1c50de6fe1ef3810018ae11732a50f15f62c7d                                                                                                                         050/enum34-1.1.6-py2-none-any.whl
+Collecting ipaddress (from netmiko)
+  Downloading https://files.pythonhosted.org/packages/fc/d0/7fc3a811e011d4b388be48a0e381db8d990042df54aa4ef4599a31d39                                                                                                                         853/ipaddress-1.0.22-py2.py3-none-any.whl
+Collecting pyasn1>=0.1.7 (from paramiko>=2.4.1->netmiko)
+  Downloading https://files.pythonhosted.org/packages/7b/7c/c9386b82a25115cccf1903441bba3cbadcfae7b678a20167347fa8ded                                                                                                                         34c/pyasn1-0.4.5-py2.py3-none-any.whl (73kB)
+    100% |████████████████████████████████| 81kB 1.4MB/s
+Collecting bcrypt>=3.1.3 (from paramiko>=2.4.1->netmiko)
+  Downloading https://files.pythonhosted.org/packages/94/1d/e0caa84ed34524ecf85a86f33ae7588da6b5877ee9e7c279113e29e29                                                                                                                         b1d/bcrypt-3.1.5-cp27-cp27mu-manylinux1_x86_64.whl (59kB)
+    100% |████████████████████████████████| 61kB 797kB/s
+Collecting cryptography>=1.5 (from paramiko>=2.4.1->netmiko)
+  Downloading https://files.pythonhosted.org/packages/7f/ba/383b51cc26e3141c689ce988814385c7659f5ba01c4b5f2de38233010                                                                                                                         b5f/cryptography-2.4.2-cp27-cp27mu-manylinux1_x86_64.whl (2.1MB)
+    100% |████████████████████████████████| 2.1MB 297kB/s
+Collecting pynacl>=1.0.1 (from paramiko>=2.4.1->netmiko)
+  Downloading https://files.pythonhosted.org/packages/b3/25/e605574f24948a8a53b497744e93f061eb1dbe7c44b6465fc1c172d59                                                                                                                         1aa/PyNaCl-1.3.0-cp27-cp27mu-manylinux1_x86_64.whl (762kB)
+    100% |████████████████████████████████| 768kB 679kB/s
+Collecting six>=1.4.1 (from bcrypt>=3.1.3->paramiko>=2.4.1->netmiko)
+  Downloading https://files.pythonhosted.org/packages/73/fb/00a976f728d0d1fecfe898238ce23f502a721c0ac0ecfedb80e0d88c6                                                                                                                         4e9/six-1.12.0-py2.py3-none-any.whl
+Collecting cffi>=1.1 (from bcrypt>=3.1.3->paramiko>=2.4.1->netmiko)
+  Downloading https://files.pythonhosted.org/packages/14/dd/3e7a1e1280e7d767bd3fa15791759c91ec19058ebe31217fe66f3e9a8                                                                                                                         c49/cffi-1.11.5-cp27-cp27mu-manylinux1_x86_64.whl (407kB)
+    100% |████████████████████████████████| 409kB 1.9MB/s
+Collecting asn1crypto>=0.21.0 (from cryptography>=1.5->paramiko>=2.4.1->netmiko)
+  Downloading https://files.pythonhosted.org/packages/ea/cd/35485615f45f30a510576f1a56d1e0a7ad7bd8ab5ed7cdc600ef7cd06                                                                                                                         222/asn1crypto-0.24.0-py2.py3-none-any.whl (101kB)
+    100% |████████████████████████████████| 102kB 4.2MB/s
+Collecting idna>=2.1 (from cryptography>=1.5->paramiko>=2.4.1->netmiko)
+  Downloading https://files.pythonhosted.org/packages/14/2c/cd551d81dbe15200be1cf41cd03869a46fe7226e7450af7a6545bfc47                                                                                                                         4c9/idna-2.8-py2.py3-none-any.whl (58kB)
+    100% |████████████████████████████████| 61kB 5.1MB/s
+Collecting pycparser (from cffi>=1.1->bcrypt>=3.1.3->paramiko>=2.4.1->netmiko)
+  Downloading https://files.pythonhosted.org/packages/68/9e/49196946aee219aead1290e00d1e7fdeab8567783e83e1b9ab5585e62                                                                                                                         06a/pycparser-2.19.tar.gz (158kB)
+    100% |████████████████████████████████| 163kB 2.9MB/s
+Building wheels for collected packages: netmiko, pyyaml, textfsm, pycparser
+  Running setup.py bdist_wheel for netmiko ... done
+  Stored in directory: /home/cisco/.cache/pip/wheels/28/f4/d7/043805c152aff8a40dd290d56e16eeb667b0af4436345b184e
+  Running setup.py bdist_wheel for pyyaml ... done
+  Stored in directory: /home/cisco/.cache/pip/wheels/ad/da/0c/74eb680767247273e2cf2723482cb9c924fe70af57c334513f
+  Running setup.py bdist_wheel for textfsm ... done
+  Stored in directory: /home/cisco/.cache/pip/wheels/e8/53/bc/dde37586dcf79060801e151dd4a137d98e64d0deca46eb19ba
+  Running setup.py bdist_wheel for pycparser ... done
+  Stored in directory: /home/cisco/.cache/pip/wheels/f2/9a/90/de94f8556265ddc9d9c8b271b0f63e57b26fb1d67a45564511
+Successfully built netmiko pyyaml textfsm pycparser
+Installing collected packages: pyasn1, six, pycparser, cffi, bcrypt, enum34, asn1crypto, idna, ipaddress, cryptograph                                                                                                                         y, pynacl, paramiko, scp, pyyaml, pyserial, textfsm, netmiko
+Successfully installed asn1crypto bcrypt cffi cryptography-1.2.3 enum34-1.1.2 idna-2.0 ipaddress-1.0.16 netmiko param                                                                                                                         iko-1.16.0 pyasn1-0.1.9 pycparser pynacl pyserial pyyaml-3.11 scp six-1.10.0 textfsm
+You are using pip version 8.1.1, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+cisco@server-1:~$
+cisco@server-1:~$ sudo pip install napalm
+The directory '/home/cisco/.cache/pip/http' or its parent directory is not owned by the current user and the cache ha                                                                                                                         s been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want s                                                                                                                         udo's -H flag.
+The directory '/home/cisco/.cache/pip' or its parent directory is not owned by the current user and caching wheels ha                                                                                                                         s been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -                                                                                                                         H flag.
+Collecting napalm
+  Downloading https://files.pythonhosted.org/packages/31/82/3af253cb987c341891666447e975bbb82aeeb311d60df382d20b7cb33                                                                                                                         826/napalm-2.3.3.tar.gz (154kB)
+    100% |████████████████████████████████| 163kB 1.6MB/s
+Collecting setuptools>=38.4.0 (from napalm)
+  Downloading https://files.pythonhosted.org/packages/37/06/754589caf971b0d2d48f151c2586f62902d93dc908e2fd9b9b9f6aa3c                                                                                                                         9dd/setuptools-40.6.3-py2.py3-none-any.whl (573kB)
+    100% |████████████████████████████████| 573kB 465kB/s
+Requirement already satisfied (use --upgrade to upgrade): cffi>=1.11.3 in ./.local/lib/python2.7/site-packages (from                                                                                                                          napalm)
+Collecting future (from napalm)
+  Downloading https://files.pythonhosted.org/packages/90/52/e20466b85000a181e1e144fd8305caf2cf475e2f9674e797b222f8105                                                                                                                         f5f/future-0.17.1.tar.gz (829kB)
+    100% |████████████████████████████████| 829kB 285kB/s
+Requirement already satisfied (use --upgrade to upgrade): textfsm in ./.local/lib/python2.7/site-packages (from napal                                                                                                                         m)
+Requirement already satisfied (use --upgrade to upgrade): jinja2 in /usr/lib/python2.7/dist-packages (from napalm)
+Collecting netaddr (from napalm)
+  Downloading https://files.pythonhosted.org/packages/ba/97/ce14451a9fd7bdb5a397abf99b24a1a6bb7a1a440b019bebd2e9a0dbe                                                                                                                         c74/netaddr-0.7.19-py2.py3-none-any.whl (1.6MB)
+    100% |████████████████████████████████| 1.6MB 397kB/s
+Requirement already satisfied (use --upgrade to upgrade): pyYAML in ./.local/lib/python2.7/site-packages (from napalm                                                                                                                         )
+Collecting pyeapi (from napalm)
+  Downloading https://files.pythonhosted.org/packages/bb/03/58f8bc4ba77ee33fd762fa50915a20304179fa2613827318baf2a08a3                                                                                                                         27e/pyeapi-0.8.2.tar.gz (133kB)
+    100% |████████████████████████████████| 143kB 1.0MB/s
+Requirement already satisfied (use --upgrade to upgrade): netmiko>=2.1.1 in ./.local/lib/python2.7/site-packages (fro                                                                                                                         m napalm)
+Collecting pyIOSXR>=0.53 (from napalm)
+  Downloading https://files.pythonhosted.org/packages/fd/86/0f0a45ba27d7c4fb8cf85e09cd2368060f7bb4642ef193edfb8942a02                                                                                                                         7b6/pyIOSXR-0.53.tar.gz
+Collecting junos-eznc>=2.1.5 (from napalm)
+  Downloading https://files.pythonhosted.org/packages/00/b5/3d6d2d572789421b71d2bd7e3bae843db504cad59415bf817c7b9075a                                                                                                                         ad6/junos_eznc-2.2.0-py2.py3-none-any.whl (155kB)
+    100% |████████████████████████████████| 163kB 2.7MB/s
+Collecting pynxos==0.0.3 (from napalm)
+  Downloading https://files.pythonhosted.org/packages/1c/b1/f84ab972db89b9ec4ca8e1a0f05050e46de0670d369cdf45f13bcfa03                                                                                                                         b40/pynxos-0.0.3.tar.gz
+Requirement already satisfied (use --upgrade to upgrade): scp in ./.local/lib/python2.7/site-packages (from napalm)
+Requirement already satisfied (use --upgrade to upgrade): pycparser in ./.local/lib/python2.7/site-packages (from cff                                                                                                                         i>=1.11.3->napalm)
+Requirement already satisfied (use --upgrade to upgrade): MarkupSafe in /usr/lib/python2.7/dist-packages (from jinja2                                                                                                                         ->napalm)
+Requirement already satisfied (use --upgrade to upgrade): enum34 in ./.local/lib/python2.7/site-packages (from netmik                                                                                                                         o>=2.1.1->napalm)
+Requirement already satisfied (use --upgrade to upgrade): paramiko>=2.4.1 in ./.local/lib/python2.7/site-packages (fr                                                                                                                         om netmiko>=2.1.1->napalm)
+Requirement already satisfied (use --upgrade to upgrade): pyserial in ./.local/lib/python2.7/site-packages (from netm                                                                                                                         iko>=2.1.1->napalm)
+Requirement already satisfied (use --upgrade to upgrade): ipaddress in ./.local/lib/python2.7/site-packages (from net                                                                                                                         miko>=2.1.1->napalm)
+Collecting lxml>=3.2.4 (from pyIOSXR>=0.53->napalm)
+  Downloading https://files.pythonhosted.org/packages/11/46/186f3fe9e7101c79d946497386f82f7be223515ccfa3caa21a6ffa62b                                                                                                                         2aa/lxml-4.3.0-cp27-cp27mu-manylinux1_x86_64.whl (5.6MB)
+    100% |████████████████████████████████| 5.6MB 123kB/s
+Requirement already satisfied (use --upgrade to upgrade): six in ./.local/lib/python2.7/site-packages (from junos-ezn                                                                                                                         c>=2.1.5->napalm)
+Collecting ncclient>=0.5.4 (from junos-eznc>=2.1.5->napalm)
+  Downloading https://files.pythonhosted.org/packages/dc/95/acc44c2ff966743fedd1ad991ecf2498f40fd434883c67138b60a6373                                                                                                                         d49/ncclient-0.6.3.tar.gz (88kB)
+    100% |████████████████████████████████| 92kB 2.2MB/s
+Collecting requests>=2.7.0 (from pynxos==0.0.3->napalm)
+  Downloading https://files.pythonhosted.org/packages/7d/e3/20f3d364d6c8e5d2353c72a67778eb189176f08e873c9900e10c0287b                                                                                                                         84b/requests-2.21.0-py2.py3-none-any.whl (57kB)
+    100% |████████████████████████████████| 61kB 1.2MB/s
+Requirement already satisfied (use --upgrade to upgrade): pyasn1>=0.1.7 in ./.local/lib/python2.7/site-packages (from                                                                                                                          paramiko>=2.4.1->netmiko>=2.1.1->napalm)
+Requirement already satisfied (use --upgrade to upgrade): bcrypt>=3.1.3 in ./.local/lib/python2.7/site-packages (from                                                                                                                          paramiko>=2.4.1->netmiko>=2.1.1->napalm)
+Requirement already satisfied (use --upgrade to upgrade): cryptography>=1.5 in ./.local/lib/python2.7/site-packages (                                                                                                                         from paramiko>=2.4.1->netmiko>=2.1.1->napalm)
+Requirement already satisfied (use --upgrade to upgrade): pynacl>=1.0.1 in ./.local/lib/python2.7/site-packages (from                                                                                                                          paramiko>=2.4.1->netmiko>=2.1.1->napalm)
+Collecting selectors2>=2.0.1 (from ncclient>=0.5.4->junos-eznc>=2.1.5->napalm)
+  Downloading https://files.pythonhosted.org/packages/c9/89/8a07d6d6c78422c5151f68453e9741af4cd82bebcfa73923f73b3bdbe                                                                                                                         f0d/selectors2-2.0.1-py2.py3-none-any.whl
+Collecting certifi>=2017.4.17 (from requests>=2.7.0->pynxos==0.0.3->napalm)
+  Downloading https://files.pythonhosted.org/packages/9f/e0/accfc1b56b57e9750eba272e24c4dddeac86852c2bebd1236674d7887                                                                                                                         e8a/certifi-2018.11.29-py2.py3-none-any.whl (154kB)
+    100% |████████████████████████████████| 163kB 1.3MB/s
+Collecting chardet<3.1.0,>=3.0.2 (from requests>=2.7.0->pynxos==0.0.3->napalm)
+  Downloading https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f1409844                                                                                                                         3b8/chardet-3.0.4-py2.py3-none-any.whl (133kB)
+    100% |████████████████████████████████| 143kB 1.7MB/s
+Requirement already satisfied (use --upgrade to upgrade): idna<2.9,>=2.5 in ./.local/lib/python2.7/site-packages (fro                                                                                                                         m requests>=2.7.0->pynxos==0.0.3->napalm)
+Collecting urllib3<1.25,>=1.21.1 (from requests>=2.7.0->pynxos==0.0.3->napalm)
+  Downloading https://files.pythonhosted.org/packages/62/00/ee1d7de624db8ba7090d1226aebefab96a2c71cd5cfa7629d6ad3f61b                                                                                                                         79e/urllib3-1.24.1-py2.py3-none-any.whl (118kB)
+    100% |████████████████████████████████| 122kB 1.1MB/s
+Requirement already satisfied (use --upgrade to upgrade): asn1crypto>=0.21.0 in ./.local/lib/python2.7/site-packages                                                                                                                          (from cryptography>=1.5->paramiko>=2.4.1->netmiko>=2.1.1->napalm)
+Installing collected packages: setuptools, future, netaddr, pyeapi, lxml, pyIOSXR, selectors2, ncclient, junos-eznc,                                                                                                                          certifi, chardet, urllib3, requests, pynxos, napalm
+  Found existing installation: setuptools 20.7.0
+    Not uninstalling setuptools at /usr/lib/python2.7/dist-packages, outside environment /usr
+  Running setup.py install for future ... done
+  Running setup.py install for pyeapi ... done
+  Running setup.py install for pyIOSXR ... done
+  Running setup.py install for ncclient ... done
+  Running setup.py install for pynxos ... done
+  Running setup.py install for napalm ... done
+Successfully installed certifi-2018.11.29 chardet-3.0.4 future-0.17.1 junos-eznc-2.2.0 lxml-4.3.0 napalm-2.3.3 ncclie                                                                                                                         nt-0.6.3 netaddr-0.7.19 pyIOSXR-0.53 pyeapi-0.8.2 pynxos-0.0.3 requests-2.21.0 selectors2-2.0.1 setuptools-40.6.3 url                                                                                                                         lib3-1.24.1
+You are using pip version 8.1.1, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+cisco@server-1:~$
+cisco@server-1:~$
+cisco@server-1:~$
+cisco@server-1:~$
+cisco@server-1:~$ ls
+cisco@server-1:~$
+cisco@server-1:~$
+cisco@server-1:~$
+cisco@server-1:~$ pwd
+/home/cisco
+cisco@server-1:~$
+cisco@server-1:~$
+cisco@server-1:~$
+cisco@server-1:~$
+cisco@server-1:~$ git clone https://github.com/jagadnag/cluer_ansible_2019
+Cloning into 'cluer_ansible_2019'...
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 16 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (16/16), done.
+Checking connectivity... done.
+cisco@server-1:~$
+cisco@server-1:~$
+cisco@server-1:~$ ls
+cluer_ansible_2019
+cisco@server-1:~$ cd cluer_ansible_2019/
+cisco@server-1:~/cluer_ansible_2019$ ls
+ansible.cfg               hosts.ini       ios_shcmd.yml   README.md
+automation_topology.virl  ios_backup.yml  nxos_shcmd.yml
+config_backup.yml         ios_config.yml  nxos_vlan.yml
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ ansible --version
+ansible 2.7.5
+  config file = /home/cisco/cluer_ansible_2019/ansible.cfg
+  configured module search path = [u'/home/cisco/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.12 (default, Nov 12 2018, 14:36:49) [GCC 5.4.0 20160609]
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ ping 198.18.1.53
+PING 198.18.1.53 (198.18.1.53) 56(84) bytes of data.
+64 bytes from 198.18.1.53: icmp_seq=1 ttl=255 time=16.1 ms
+64 bytes from 198.18.1.53: icmp_seq=2 ttl=255 time=2.92 ms
+64 bytes from 198.18.1.53: icmp_seq=3 ttl=255 time=2.84 ms
+64 bytes from 198.18.1.53: icmp_seq=4 ttl=255 time=5.73 ms
+^C
+--- 198.18.1.53 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3011ms
+rtt min/avg/max/mdev = 2.849/6.919/16.175/5.468 ms
+cisco@server-1:~/cluer_ansible_2019$ ping 198.18.1.54
+PING 198.18.1.54 (198.18.1.54) 56(84) bytes of data.
+64 bytes from 198.18.1.54: icmp_seq=1 ttl=255 time=12.7 ms
+64 bytes from 198.18.1.54: icmp_seq=2 ttl=255 time=4.54 ms
+64 bytes from 198.18.1.54: icmp_seq=3 ttl=255 time=3.08 ms
+^C
+--- 198.18.1.54 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2012ms
+rtt min/avg/max/mdev = 3.088/6.802/12.771/4.263 ms
+cisco@server-1:~/cluer_ansible_2019$ ping 198.18.1.55
+PING 198.18.1.55 (198.18.1.55) 56(84) bytes of data.
+64 bytes from 198.18.1.55: icmp_seq=1 ttl=255 time=14.9 ms
+64 bytes from 198.18.1.55: icmp_seq=2 ttl=255 time=1.55 ms
+^C
+--- 198.18.1.55 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1003ms
+rtt min/avg/max/mdev = 1.555/8.247/14.940/6.693 ms
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ ssh cisco@198.18.1.53
+ssh: connect to host 198.18.1.53 port 22: Connection refused
+cisco@server-1:~/cluer_ansible_2019$ ssh cisco@198.18.1.53
+The authenticity of host '198.18.1.53 (198.18.1.53)' can't be established.
+RSA key fingerprint is SHA256:pyYwiUrwjkwtne0i+PPh1R+9OBcn3MP/hQ80sOngxCA.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '198.18.1.53' (RSA) to the list of known hosts.
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************cisco@198.18.1.53's password:
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+iosv-1#
+iosv-1#
+iosv-1#
+iosv-1#
+iosv-1#exit
+Connection to 198.18.1.53 closed.
+cisco@server-1:~/cluer_ansible_2019$ ssh cisco@198.18.1.54
+The authenticity of host '198.18.1.54 (198.18.1.54)' can't be established.
+RSA key fingerprint is SHA256:qY+a22iHQvUX9eLzLIxRkd1B7YMLvrWkiTp5PnKQpTc.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '198.18.1.54' (RSA) to the list of known hosts.
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************cisco@198.18.1.54's password:
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+iosv-2#
+iosv-2#
+iosv-2#
+iosv-2#exit
+Connection to 198.18.1.54 closed.
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ ssh cisco@198.18.1.55
+The authenticity of host '198.18.1.55 (198.18.1.55)' can't be established.
+RSA key fingerprint is SHA256:oSmRIx+fcmRlvRewAQwBMA1YWG6vjlsMuwTrJwh+b88.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '198.18.1.55' (RSA) to the list of known hosts.
+User Access Verification
+cisco@198.18.1.55's password:
+
+Bad terminal type: "vt220". Will assume vt100.
+Cisco NX-OS Software
+Copyright (c) 2002-2016, Cisco Systems, Inc. All rights reserved.
+NX-OSv software ("NX-OSv Software") and related documentation,
+files or other reference materials ("Documentation") are
+the proprietary property and confidential information of Cisco
+Systems, Inc. ("Cisco") and are protected, without limitation,
+pursuant to United States and International copyright and trademark
+laws in the applicable jurisdiction which provide civil and criminal
+penalties for copying or distribution without Cisco's authorization.
+
+Any use or disclosure, in whole or in part, of the NX-OSv Software
+or Documentation to any third party for any purposes is expressly
+prohibited except as otherwise authorized by Cisco in writing.
+The copyrights to certain works contained herein are owned by other
+third parties and are used and distributed under license. Some parts
+of this software may be covered under the GNU Public License or the
+GNU Lesser General Public License. A copy of each such license is
+available at
+http://www.gnu.org/licenses/gpl.html and
+http://www.gnu.org/licenses/lgpl.html
+***************************************************************************
+*  NX-OSv is strictly limited to use for evaluation, demonstration and    *
+*  NX-OS education. NX-OSv is provided as-is and is not supported by      *
+*  Cisco's Technical Advisory Center. Any use or disclosure, in whole or  *
+*  in part of the NX-OSv Software or Documentation to any third party for *
+*  any purposes is expressly prohibited except as otherwise authorized by *
+*  Cisco in writing.                                                      *
+***************************************************************************
+nx-osv-1#
+nx-osv-1#
+nx-osv-1#
+nx-osv-1#
+nx-osv-1#
+nx-osv-1# exit
+Connection to 198.18.1.55 closed.
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ more hosts
+more: stat of hosts failed: No such file or directory
+cisco@server-1:~/cluer_ansible_2019$ more hosts
+more: stat of hosts failed: No such file or directory
+cisco@server-1:~/cluer_ansible_2019$ more hosts.ini
+#Ansible Inventory file
+
+[all:vars]
+ansible_connection=local
+
+[cisco:children]
+routers
+nxos
+
+[routers]
+iosv1 ansible_host=198.18.1.53
+iosv2 ansible_host=198.18.1.54
+
+[routers:vars]
+ansible_user=cisco
+ansible_ssh_pass=cisco
+ansible_connection=network_cli
+ansible_network_os=ios
+
+[nxos]
+nxos1 ansible_host=198.18.1.56
+nxos2 ansible_host=198.18.1.57
+
+[nxos:vars]
+ansible_user=admin
+ansible_ssh_pass=cisco!123
+ansible_connection=network_cli
+ansible_network_os=nxos
+cisco@server-1:~/cluer_ansible_2019$ mv hosts.ini hosts
+cisco@server-1:~/cluer_ansible_2019$ nano hosts
+  GNU nano 2.5.3               File: hosts
+
+iosv1 ansible_host=198.18.1.53
+iosv2 ansible_host=198.18.1.54
+
+[routers:vars]
+ansible_user=cisco
+ansible_ssh_pass=cisco
+ansible_connection=network_cli
+ansible_network_os=ios
+
+[nxos]
+nxos1 ansible_host=198.18.1.56
+nxos2 ansible_host=198.18.1.57
+
+[nxos:vars]
+ansible_user=admin
+ansible_ssh_pass=cisco
+ansible_connection=network_cli
+ansible_network_os=nxos
+
+
+
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ more hosts
+#Ansible Inventory file
+
+[all:vars]
+ansible_connection=local
+
+[cisco:children]
+routers
+nxos
+
+[routers]
+iosv1 ansible_host=198.18.1.53
+iosv2 ansible_host=198.18.1.54
+
+[routers:vars]
+ansible_user=cisco
+ansible_ssh_pass=cisco
+ansible_connection=network_cli
+ansible_network_os=ios
+
+[nxos]
+nxos1 ansible_host=198.18.1.56
+nxos2 ansible_host=198.18.1.57
+
+[nxos:vars]
+ansible_user=admin
+ansible_ssh_pass=cisco
+ansible_connection=network_cli
+ansible_network_os=nxos
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ ansible routers -m ping
+iosv2 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+iosv1 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+cisco@server-1:~/cluer_ansible_2019$ ansible cisco -m ping
+iosv1 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+iosv2 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+nxos1 | FAILED! => {
+    "msg": "[Errno None] Unable to connect to port 22 on 198.18.1.56"
+}
+nxos2 | FAILED! => {
+    "msg": "[Errno None] Unable to connect to port 22 on 198.18.1.57"
+}
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ nano hosts
+  GNU nano 2.5.3               File: hosts
+
+iosv1 ansible_host=198.18.1.53
+iosv2 ansible_host=198.18.1.54
+
+[routers:vars]
+ansible_user=cisco
+ansible_ssh_pass=cisco
+ansible_connection=network_cli
+ansible_network_os=ios
+
+[nxos]
+nxos1 ansible_host=198.18.1.55
+
+[nxos:vars]
+ansible_user=admin
+ansible_ssh_pass=cisco
+ansible_connection=network_cli
+ansible_network_os=nxos
+
+
+
+
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ ansible cisco -m ping
+iosv1 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+iosv2 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+nxos1 | FAILED! => {
+    "msg": "Authentication failed."
+}
+cisco@server-1:~/cluer_ansible_2019$ nano hosts
+  GNU nano 2.5.3               File: hosts
+
+iosv1 ansible_host=198.18.1.53
+iosv2 ansible_host=198.18.1.54
+
+[routers:vars]
+ansible_user=cisco
+ansible_ssh_pass=cisco
+ansible_connection=network_cli
+ansible_network_os=ios
+
+[nxos]
+nxos1 ansible_host=198.18.1.55
+
+[nxos:vars]
+ansible_user=cisco
+ansible_ssh_pass=cisco
+ansible_connection=network_cli
+ansible_network_os=nxos
+
+
+
+
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ cat hosts
+#Ansible Inventory file
+
+[all:vars]
+ansible_connection=local
+
+[cisco:children]
+routers
+nxos
+
+[routers]
+iosv1 ansible_host=198.18.1.53
+iosv2 ansible_host=198.18.1.54
+
+[routers:vars]
+ansible_user=cisco
+ansible_ssh_pass=cisco
+ansible_connection=network_cli
+ansible_network_os=ios
+
+[nxos]
+nxos1 ansible_host=198.18.1.55
+
+[nxos:vars]
+ansible_user=cisco
+ansible_ssh_pass=cisco
+ansible_connection=network_cli
+ansible_network_os=nxos
+cisco@server-1:~/cluer_ansible_2019$ ansible cisco -m ping
+iosv1 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+iosv2 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+nxos1 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ ls
+ansible.cfg               hosts           ios_shcmd.yml   README.md
+automation_topology.virl  ios_backup.yml  nxos_shcmd.yml
+config_backup.yml         ios_config.yml  nxos_vlan.yml
+cisco@server-1:~/cluer_ansible_2019$ ll
+total 72
+drwxrwxr-x 3 cisco cisco  4096 Jan 15 22:32 ./
+drwxr-xr-x 8 cisco cisco  4096 Jan 15 22:30 ../
+-rw-rw-r-- 1 cisco cisco   248 Jan 15 22:24 ansible.cfg
+-rw-rw-r-- 1 cisco cisco 23662 Jan 15 22:24 automation_topology.virl
+-rw-rw-r-- 1 cisco cisco   332 Jan 15 22:24 config_backup.yml
+drwxrwxr-x 8 cisco cisco  4096 Jan 15 22:24 .git/
+-rw-rw-r-- 1 cisco cisco   453 Jan 15 22:32 hosts
+-rw-rw-r-- 1 cisco cisco   316 Jan 15 22:24 ios_backup.yml
+-rw-rw-r-- 1 cisco cisco   526 Jan 15 22:24 ios_config.yml
+-rw-rw-r-- 1 cisco cisco   292 Jan 15 22:24 ios_shcmd.yml
+-rw-rw-r-- 1 cisco cisco   207 Jan 15 22:24 nxos_shcmd.yml
+-rw-rw-r-- 1 cisco cisco   199 Jan 15 22:24 nxos_vlan.yml
+-rw-rw-r-- 1 cisco cisco    20 Jan 15 22:24 README.md
+cisco@server-1:~/cluer_ansible_2019$ more ios_shcmd.yml
+---
+- hosts: routers
+  name: Run show command
+  gather_facts: no
+
+  tasks:
+    - name: run show command
+      ios_command:
+        commands:
+          - show version
+      register: cisco_output
+
+    - name: PRINT OUTPUT TO SCREEN
+      debug:
+        var: cisco_output.stdout
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ ansible-playbook ios_shcmd.yml
+
+PLAY [Run show command] ********************************************************
+
+TASK [run show command] ********************************************************
+ok: [iosv1]
+ok: [iosv2]
+
+TASK [PRINT OUTPUT TO SCREEN] **************************************************
+ok: [iosv1] => {
+    "cisco_output.stdout": [
+        "Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.6(3)M2, RELEASE SOFTWARE (fc2)\nTechn                                                                                                                         ical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2017 by Cisco Systems, Inc.\nCompiled Wed 29-Mar-1                                                                                                                         7 14:05 by prod_rel_team\n\n\nROM: Bootstrap program is IOSv\n\niosv-1 uptime is 19 minutes\nSystem returned to ROM b                                                                                                                         y reload\nSystem image file is \"flash0:/vios-adventerprisek9-m\"\nLast reload reason: Unknown reason\n\n\n\nThis pro                                                                                                                         duct contains cryptographic features and is subject to United\nStates and local country laws governing import, export                                                                                                                         , transfer and\nuse. Delivery of Cisco cryptographic products does not imply\nthird-party authority to import, export                                                                                                                         , distribute or use encryption.\nImporters, exporters, distributors and users are responsible for\ncompliance with U.                                                                                                                         S. and local country laws. By using this product you\nagree to comply with applicable laws and regulations. If you ar                                                                                                                         e unable\nto comply with U.S. and local laws, return this product immediately.\n\nA summary of U.S. laws governing Ci                                                                                                                         sco cryptographic products may be found at:\nhttp://www.cisco.com/wwl/export/crypto/tool/stqrg.html\n\nIf you require                                                                                                                          further assistance please contact us by sending email to\nexport@cisco.com.\n\nCisco IOSv (revision 1.0) with  with                                                                                                                          484609K/37888K bytes of memory.\nProcessor board ID 9SEYD9Z90J0UCKBPL7YD6\n2 Gigabit Ethernet interfaces\nDRAM config                                                                                                                         uration is 72 bits wide with parity disabled.\n256K bytes of non-volatile configuration memory.\n2097152K bytes of AT                                                                                                                         A System CompactFlash 0 (Read/Write)\n0K bytes of ATA CompactFlash 1 (Read/Write)\n0K bytes of ATA CompactFlash 2 (Re                                                                                                                         ad/Write)\n10080K bytes of ATA CompactFlash 3 (Read/Write)\n\n\n\nConfiguration register is 0x0"
+    ]
+}
+ok: [iosv2] => {
+    "cisco_output.stdout": [
+        "Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.6(3)M2, RELEASE SOFTWARE (fc2)\nTechn                                                                                                                         ical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2017 by Cisco Systems, Inc.\nCompiled Wed 29-Mar-1                                                                                                                         7 14:05 by prod_rel_team\n\n\nROM: Bootstrap program is IOSv\n\niosv-2 uptime is 19 minutes\nSystem returned to ROM b                                                                                                                         y reload\nSystem image file is \"flash0:/vios-adventerprisek9-m\"\nLast reload reason: Unknown reason\n\n\n\nThis pro                                                                                                                         duct contains cryptographic features and is subject to United\nStates and local country laws governing import, export                                                                                                                         , transfer and\nuse. Delivery of Cisco cryptographic products does not imply\nthird-party authority to import, export                                                                                                                         , distribute or use encryption.\nImporters, exporters, distributors and users are responsible for\ncompliance with U.                                                                                                                         S. and local country laws. By using this product you\nagree to comply with applicable laws and regulations. If you ar                                                                                                                         e unable\nto comply with U.S. and local laws, return this product immediately.\n\nA summary of U.S. laws governing Ci                                                                                                                         sco cryptographic products may be found at:\nhttp://www.cisco.com/wwl/export/crypto/tool/stqrg.html\n\nIf you require                                                                                                                          further assistance please contact us by sending email to\nexport@cisco.com.\n\nCisco IOSv (revision 1.0) with  with                                                                                                                          484609K/37888K bytes of memory.\nProcessor board ID 9XE9JL7AE2Y7E8BZEHG64\n2 Gigabit Ethernet interfaces\nDRAM config                                                                                                                         uration is 72 bits wide with parity disabled.\n256K bytes of non-volatile configuration memory.\n2097152K bytes of AT                                                                                                                         A System CompactFlash 0 (Read/Write)\n0K bytes of ATA CompactFlash 1 (Read/Write)\n0K bytes of ATA CompactFlash 2 (Re                                                                                                                         ad/Write)\n10080K bytes of ATA CompactFlash 3 (Read/Write)\n\n\n\nConfiguration register is 0x0"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+iosv1                      : ok=2    changed=0    unreachable=0    failed=0
+iosv2                      : ok=2    changed=0    unreachable=0    failed=0
+
+cisco@server-1:~/cluer_ansible_2019$ ll
+total 72
+drwxrwxr-x 3 cisco cisco  4096 Jan 15 22:32 ./
+drwxr-xr-x 8 cisco cisco  4096 Jan 15 22:30 ../
+-rw-rw-r-- 1 cisco cisco   248 Jan 15 22:24 ansible.cfg
+-rw-rw-r-- 1 cisco cisco 23662 Jan 15 22:24 automation_topology.virl
+-rw-rw-r-- 1 cisco cisco   332 Jan 15 22:24 config_backup.yml
+drwxrwxr-x 8 cisco cisco  4096 Jan 15 22:24 .git/
+-rw-rw-r-- 1 cisco cisco   453 Jan 15 22:32 hosts
+-rw-rw-r-- 1 cisco cisco   316 Jan 15 22:24 ios_backup.yml
+-rw-rw-r-- 1 cisco cisco   526 Jan 15 22:24 ios_config.yml
+-rw-rw-r-- 1 cisco cisco   292 Jan 15 22:24 ios_shcmd.yml
+-rw-rw-r-- 1 cisco cisco   207 Jan 15 22:24 nxos_shcmd.yml
+-rw-rw-r-- 1 cisco cisco   199 Jan 15 22:24 nxos_vlan.yml
+-rw-rw-r-- 1 cisco cisco    20 Jan 15 22:24 README.md
+cisco@server-1:~/cluer_ansible_2019$ cat nxos_shcmd.yml
+---
+- hosts: nxos
+  name: backup router configurations
+  gather_facts: no
+
+  tasks:
+    - name: run multiple commands on remote nodes
+      nxos_command:
+        commands:
+          - show version
+cisco@server-1:~/cluer_ansible_2019$ ansible-playbook nxos_shcmd.yml
+
+PLAY [backup router configurations] ********************************************
+
+TASK [run multiple commands on remote nodes] ***********************************
+ok: [nxos1]
+
+PLAY RECAP *********************************************************************
+nxos1                      : ok=1    changed=0    unreachable=0    failed=0
+
+cisco@server-1:~/cluer_ansible_2019$ more ios_shcmd.yml
+---
+- hosts: routers
+  name: Run show command
+  gather_facts: no
+
+  tasks:
+    - name: run show command
+      ios_command:
+        commands:
+          - show version
+      register: cisco_output
+
+    - name: PRINT OUTPUT TO SCREEN
+      debug:
+        var: cisco_output.stdout
+cisco@server-1:~/cluer_ansible_2019$ nano nxos_shcmd.yml
+  GNU nano 2.5.3            File: nxos_shcmd.yml
+
+---
+- hosts: nxos
+  name: backup router configurations
+  gather_facts: no
+
+  tasks:
+    - name: run multiple commands on remote nodes
+      nxos_command:
+        commands:
+          - show version
+
+      register: cisco_output
+
+    - name: PRINT OUTPUT TO SCREEN
+      debug:
+        var: cisco_output.stdout
+
+
+
+
+
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ ansible-playbook nxos_shcmd.yml
+
+PLAY [backup router configurations] ********************************************
+
+TASK [run multiple commands on remote nodes] ***********************************
+ok: [nxos1]
+
+TASK [PRINT OUTPUT TO SCREEN] **************************************************
+ok: [nxos1] => {
+    "cisco_output.stdout": [
+        "Cisco Nexus Operating System (NX-OS) Software\nTAC support: http://www.cisco.com/tac\nDocuments: http://www.                                                                                                                         cisco.com/en/US/products/ps9372/tsd_products_support_series_home.html\nCopyright (c) 2002-2016, Cisco Systems, Inc. A                                                                                                                         ll rights reserved.\nThe copyrights to certain works contained herein are owned by\nother third parties and are used                                                                                                                          and distributed under license.\nSome parts of this software are covered under the GNU Public\nLicense. A copy of the                                                                                                                          license is available at\nhttp://www.gnu.org/licenses/gpl.html.\n\nNX-OSv is a demo version of the Nexus Operating Sys                                                                                                                         tem\n\nSoftware\n  loader:    version N/A\n  kickstart: version 7.3(0)D1(1)\n  system:    version 7.3(0)D1(1)\n  kick                                                                                                                         start image file is: bootflash:///titanium-d1-kickstart.7.3.0.D1.1.bin\n  kickstart compile time:  1/11/2016 16:00:00                                                                                                                          [02/11/2016 10:30:12]\n  system image file is:    bootflash:///titanium-d1.7.3.0.D1.1.bin\n  system compile time:                                                                                                                              1/11/2016 16:00:00 [02/11/2016 13:08:11]\n\n\nHardware\n  cisco NX-OSv Chassis (\"NX-OSv Supervisor Module\")\n  QE                                                                                                                         MU Virtual CPU version 2.5 with 3064740 kB of memory.\n  Processor Board ID TM00030000B\n\n  Device name: nx-osv-1\n                                                                                                                           bootflash:    3184776 kB\n\nKernel uptime is 0 day(s), 0 hour(s), 22 minute(s), 4 second(s)\n\n\nplugin\n  Core Plug                                                                                                                         in, Ethernet Plugin\n\nActive Package(s)"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+nxos1                      : ok=2    changed=0    unreachable=0    failed=0
+
+cisco@server-1:~/cluer_ansible_2019$ ls
+ansible.cfg               hosts           ios_shcmd.yml   README.md
+automation_topology.virl  ios_backup.yml  nxos_shcmd.yml
+config_backup.yml         ios_config.yml  nxos_vlan.yml
+cisco@server-1:~/cluer_ansible_2019$ ll
+total 72
+drwxrwxr-x 3 cisco cisco  4096 Jan 15 22:36 ./
+drwxr-xr-x 8 cisco cisco  4096 Jan 15 22:30 ../
+-rw-rw-r-- 1 cisco cisco   248 Jan 15 22:24 ansible.cfg
+-rw-rw-r-- 1 cisco cisco 23662 Jan 15 22:24 automation_topology.virl
+-rw-rw-r-- 1 cisco cisco   332 Jan 15 22:24 config_backup.yml
+drwxrwxr-x 8 cisco cisco  4096 Jan 15 22:24 .git/
+-rw-rw-r-- 1 cisco cisco   453 Jan 15 22:32 hosts
+-rw-rw-r-- 1 cisco cisco   316 Jan 15 22:24 ios_backup.yml
+-rw-rw-r-- 1 cisco cisco   526 Jan 15 22:24 ios_config.yml
+-rw-rw-r-- 1 cisco cisco   292 Jan 15 22:24 ios_shcmd.yml
+-rw-rw-r-- 1 cisco cisco   327 Jan 15 22:36 nxos_shcmd.yml
+-rw-rw-r-- 1 cisco cisco   199 Jan 15 22:24 nxos_vlan.yml
+-rw-rw-r-- 1 cisco cisco    20 Jan 15 22:24 README.md
+cisco@server-1:~/cluer_ansible_2019$ rm automation_topology.virl
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ more nxos_shcmd.yml
+---
+- hosts: nxos
+  name: backup router configurations
+  gather_facts: no
+
+  tasks:
+    - name: run multiple commands on remote nodes
+      nxos_command:
+        commands:
+          - show version
+
+      register: cisco_output
+
+    - name: PRINT OUTPUT TO SCREEN
+      debug:
+        var: cisco_output.stdout
+
+cisco@server-1:~/cluer_ansible_2019$ ll
+total 48
+drwxrwxr-x 3 cisco cisco 4096 Jan 15 22:37 ./
+drwxr-xr-x 8 cisco cisco 4096 Jan 15 22:30 ../
+-rw-rw-r-- 1 cisco cisco  248 Jan 15 22:24 ansible.cfg
+-rw-rw-r-- 1 cisco cisco  332 Jan 15 22:24 config_backup.yml
+drwxrwxr-x 8 cisco cisco 4096 Jan 15 22:24 .git/
+-rw-rw-r-- 1 cisco cisco  453 Jan 15 22:32 hosts
+-rw-rw-r-- 1 cisco cisco  316 Jan 15 22:24 ios_backup.yml
+-rw-rw-r-- 1 cisco cisco  526 Jan 15 22:24 ios_config.yml
+-rw-rw-r-- 1 cisco cisco  292 Jan 15 22:24 ios_shcmd.yml
+-rw-rw-r-- 1 cisco cisco  327 Jan 15 22:36 nxos_shcmd.yml
+-rw-rw-r-- 1 cisco cisco  199 Jan 15 22:24 nxos_vlan.yml
+-rw-rw-r-- 1 cisco cisco   20 Jan 15 22:24 README.md
+cisco@server-1:~/cluer_ansible_2019$ nano nxos_config.yml
+  GNU nano 2.5.3            File: nxos_config.yml
+
+---
+- name: NXOS Config module example
+  hosts: nxos
+  gather_facts: no
+
+  tasks:
+    - name: Configuring ACL on NXOS
+      nxos_config:
+        lines:
+          - 10 permit ip 192.0.2.1/32 any log
+          - 20 permit ip 192.0.2.2/32 any log
+          - 30 permit ip 192.0.2.3/32 any log
+          - 40 permit ip 192.0.2.4/32 any log
+          - 50 permit ip 192.0.2.5/32 any log
+        parents: ip access-list test
+        before: no ip access-list test
+        match: exact
+
+
+
+
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ ll
+total 52
+drwxrwxr-x 3 cisco cisco 4096 Jan 15 22:42 ./
+drwxr-xr-x 8 cisco cisco 4096 Jan 15 22:30 ../
+-rw-rw-r-- 1 cisco cisco  248 Jan 15 22:24 ansible.cfg
+-rw-rw-r-- 1 cisco cisco  332 Jan 15 22:24 config_backup.yml
+drwxrwxr-x 8 cisco cisco 4096 Jan 15 22:24 .git/
+-rw-rw-r-- 1 cisco cisco  453 Jan 15 22:32 hosts
+-rw-rw-r-- 1 cisco cisco  316 Jan 15 22:24 ios_backup.yml
+-rw-rw-r-- 1 cisco cisco  526 Jan 15 22:24 ios_config.yml
+-rw-rw-r-- 1 cisco cisco  292 Jan 15 22:24 ios_shcmd.yml
+-rw-rw-r-- 1 cisco cisco  479 Jan 15 22:42 nxos_config.yml
+-rw-rw-r-- 1 cisco cisco  327 Jan 15 22:36 nxos_shcmd.yml
+-rw-rw-r-- 1 cisco cisco  199 Jan 15 22:24 nxos_vlan.yml
+-rw-rw-r-- 1 cisco cisco   20 Jan 15 22:24 README.md
+cisco@server-1:~/cluer_ansible_2019$ more ios_backup.yml
+---
+- name: backup router configurations
+  hosts: routers
+  connection: network_cli
+  gather_facts: no
+
+  tasks:
+    - name: gather ios_facts
+      ios_facts:
+      register: version
+
+    - debug:
+        msg: "{‌{version}}"
+
+    - name: Backup configuration
+      ios_config:
+        backup: yes
+cisco@server-1:~/cluer_ansible_2019$ more ios_shcmd.yml
+---
+- hosts: routers
+  name: Run show command
+  gather_facts: no
+
+  tasks:
+    - name: run show command
+      ios_command:
+        commands:
+          - show version
+      register: cisco_output
+
+    - name: PRINT OUTPUT TO SCREEN
+      debug:
+        var: cisco_output.stdout
+cisco@server-1:~/cluer_ansible_2019$ nano ios_shcmd.yml
+  GNU nano 2.5.3             File: ios_shcmd.yml
+
+---
+- hosts: routers
+  name: Run show command
+  gather_facts: no
+
+  tasks:
+    - name: run show command
+      ios_command:
+        commands:
+          - show version
+      register: cisco_output
+
+    - name: PRINT OUTPUT TO SCREEN
+      debug:
+        var: cisco_output.stdout_lines
+
+
+
+
+
+
+cisco@server-1:~/cluer_ansible_2019$ nano ios_shcmd.yml
+  GNU nano 2.5.3             File: ios_shcmd.yml
+
+---
+- name: IOS command example playbook
+  hosts: routers
+  gather_facts: no
+
+  tasks:
+    - name: Run show command
+      ios_command:
+        commands:
+          - show version
+      register: cisco_output
+
+    - name: PRINT OUTPUT TO SCREEN
+      debug:
+        var: cisco_output.stdout_lines
+
+
+
+
+
+
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ ansible-playbook ios_shcmd.yml
+
+PLAY [IOS command example playbook] ********************************************
+
+TASK [Run show command] ********************************************************
+ok: [iosv1]
+ok: [iosv2]
+
+TASK [PRINT OUTPUT TO SCREEN] **************************************************
+ok: [iosv1] => {
+    "cisco_output.stdout_lines": [
+        [
+            "Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.6(3)M2, RELEASE SOFTWARE (fc2)",
+            "Technical Support: http://www.cisco.com/techsupport",
+            "Copyright (c) 1986-2017 by Cisco Systems, Inc.",
+            "Compiled Wed 29-Mar-17 14:05 by prod_rel_team",
+            "",
+            "",
+            "ROM: Bootstrap program is IOSv",
+            "",
+            "iosv-1 uptime is 31 minutes",
+            "System returned to ROM by reload",
+            "System image file is \"flash0:/vios-adventerprisek9-m\"",
+            "Last reload reason: Unknown reason",
+            "",
+            "",
+            "",
+            "This product contains cryptographic features and is subject to United",
+            "States and local country laws governing import, export, transfer and",
+            "use. Delivery of Cisco cryptographic products does not imply",
+            "third-party authority to import, export, distribute or use encryption.",
+            "Importers, exporters, distributors and users are responsible for",
+            "compliance with U.S. and local country laws. By using this product you",
+            "agree to comply with applicable laws and regulations. If you are unable",
+            "to comply with U.S. and local laws, return this product immediately.",
+            "",
+            "A summary of U.S. laws governing Cisco cryptographic products may be found at:",
+            "http://www.cisco.com/wwl/export/crypto/tool/stqrg.html",
+            "",
+            "If you require further assistance please contact us by sending email to",
+            "export@cisco.com.",
+            "",
+            "Cisco IOSv (revision 1.0) with  with 484609K/37888K bytes of memory.",
+            "Processor board ID 9SEYD9Z90J0UCKBPL7YD6",
+            "2 Gigabit Ethernet interfaces",
+            "DRAM configuration is 72 bits wide with parity disabled.",
+            "256K bytes of non-volatile configuration memory.",
+            "2097152K bytes of ATA System CompactFlash 0 (Read/Write)",
+            "0K bytes of ATA CompactFlash 1 (Read/Write)",
+            "0K bytes of ATA CompactFlash 2 (Read/Write)",
+            "10080K bytes of ATA CompactFlash 3 (Read/Write)",
+            "",
+            "",
+            "",
+            "Configuration register is 0x0"
+        ]
+    ]
+}
+ok: [iosv2] => {
+    "cisco_output.stdout_lines": [
+        [
+            "Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.6(3)M2, RELEASE SOFTWARE (fc2)",
+            "Technical Support: http://www.cisco.com/techsupport",
+            "Copyright (c) 1986-2017 by Cisco Systems, Inc.",
+            "Compiled Wed 29-Mar-17 14:05 by prod_rel_team",
+            "",
+            "",
+            "ROM: Bootstrap program is IOSv",
+            "",
+            "iosv-2 uptime is 31 minutes",
+            "System returned to ROM by reload",
+            "System image file is \"flash0:/vios-adventerprisek9-m\"",
+            "Last reload reason: Unknown reason",
+            "",
+            "",
+            "",
+            "This product contains cryptographic features and is subject to United",
+            "States and local country laws governing import, export, transfer and",
+            "use. Delivery of Cisco cryptographic products does not imply",
+            "third-party authority to import, export, distribute or use encryption.",
+            "Importers, exporters, distributors and users are responsible for",
+            "compliance with U.S. and local country laws. By using this product you",
+            "agree to comply with applicable laws and regulations. If you are unable",
+            "to comply with U.S. and local laws, return this product immediately.",
+            "",
+            "A summary of U.S. laws governing Cisco cryptographic products may be found at:",
+            "http://www.cisco.com/wwl/export/crypto/tool/stqrg.html",
+            "",
+            "If you require further assistance please contact us by sending email to",
+            "export@cisco.com.",
+            "",
+            "Cisco IOSv (revision 1.0) with  with 484609K/37888K bytes of memory.",
+            "Processor board ID 9XE9JL7AE2Y7E8BZEHG64",
+            "2 Gigabit Ethernet interfaces",
+            "DRAM configuration is 72 bits wide with parity disabled.",
+            "256K bytes of non-volatile configuration memory.",
+            "2097152K bytes of ATA System CompactFlash 0 (Read/Write)",
+            "0K bytes of ATA CompactFlash 1 (Read/Write)",
+            "0K bytes of ATA CompactFlash 2 (Read/Write)",
+            "10080K bytes of ATA CompactFlash 3 (Read/Write)",
+            "",
+            "",
+            "",
+            "Configuration register is 0x0"
+        ]
+    ]
+}
+
+PLAY RECAP *********************************************************************
+iosv1                      : ok=2    changed=0    unreachable=0    failed=0
+iosv2                      : ok=2    changed=0    unreachable=0    failed=0
+
+cisco@server-1:~/cluer_ansible_2019$ ll
+total 52
+drwxrwxr-x 3 cisco cisco 4096 Jan 15 22:47 ./
+drwxr-xr-x 8 cisco cisco 4096 Jan 15 22:30 ../
+-rw-rw-r-- 1 cisco cisco  248 Jan 15 22:24 ansible.cfg
+-rw-rw-r-- 1 cisco cisco  332 Jan 15 22:24 config_backup.yml
+drwxrwxr-x 8 cisco cisco 4096 Jan 15 22:24 .git/
+-rw-rw-r-- 1 cisco cisco  453 Jan 15 22:32 hosts
+-rw-rw-r-- 1 cisco cisco  316 Jan 15 22:24 ios_backup.yml
+-rw-rw-r-- 1 cisco cisco  526 Jan 15 22:24 ios_config.yml
+-rw-rw-r-- 1 cisco cisco  310 Jan 15 22:47 ios_shcmd.yml
+-rw-rw-r-- 1 cisco cisco  479 Jan 15 22:42 nxos_config.yml
+-rw-rw-r-- 1 cisco cisco  327 Jan 15 22:36 nxos_shcmd.yml
+-rw-rw-r-- 1 cisco cisco  199 Jan 15 22:24 nxos_vlan.yml
+-rw-rw-r-- 1 cisco cisco   20 Jan 15 22:24 README.md
+cisco@server-1:~/cluer_ansible_2019$ more ios_backup.yml
+---
+- name: backup router configurations
+  hosts: routers
+  connection: network_cli
+  gather_facts: no
+
+  tasks:
+    - name: gather ios_facts
+      ios_facts:
+      register: version
+
+    - debug:
+        msg: "{‌{version}}"
+
+    - name: Backup configuration
+      ios_config:
+        backup: yes
+cisco@server-1:~/cluer_ansible_2019$ ansible-playbook ios_backup.yml
+
+PLAY [backup router configurations] ********************************************
+
+TASK [gather ios_facts] ********************************************************
+ok: [iosv1]
+ok: [iosv2]
+
+TASK [debug] *******************************************************************
+ok: [iosv1] => {
+    "msg": "{‌{version}}"
+}
+ok: [iosv2] => {
+    "msg": "{‌{version}}"
+}
+
+TASK [Backup configuration] ****************************************************
+ok: [iosv1]
+ok: [iosv2]
+
+PLAY RECAP *********************************************************************
+iosv1                      : ok=3    changed=0    unreachable=0    failed=0
+iosv2                      : ok=3    changed=0    unreachable=0    failed=0
+
+cisco@server-1:~/cluer_ansible_2019$ ll
+total 56
+drwxrwxr-x 4 cisco cisco 4096 Jan 15 22:48 ./
+drwxr-xr-x 8 cisco cisco 4096 Jan 15 22:30 ../
+-rw-rw-r-- 1 cisco cisco  248 Jan 15 22:24 ansible.cfg
+drwxrwxr-x 2 cisco cisco 4096 Jan 15 22:48 backup/
+-rw-rw-r-- 1 cisco cisco  332 Jan 15 22:24 config_backup.yml
+drwxrwxr-x 8 cisco cisco 4096 Jan 15 22:24 .git/
+-rw-rw-r-- 1 cisco cisco  453 Jan 15 22:32 hosts
+-rw-rw-r-- 1 cisco cisco  316 Jan 15 22:24 ios_backup.yml
+-rw-rw-r-- 1 cisco cisco  526 Jan 15 22:24 ios_config.yml
+-rw-rw-r-- 1 cisco cisco  310 Jan 15 22:47 ios_shcmd.yml
+-rw-rw-r-- 1 cisco cisco  479 Jan 15 22:42 nxos_config.yml
+-rw-rw-r-- 1 cisco cisco  327 Jan 15 22:36 nxos_shcmd.yml
+-rw-rw-r-- 1 cisco cisco  199 Jan 15 22:24 nxos_vlan.yml
+-rw-rw-r-- 1 cisco cisco   20 Jan 15 22:24 README.md
+cisco@server-1:~/cluer_ansible_2019$ ll backup/
+total 24
+drwxrwxr-x 2 cisco cisco 4096 Jan 15 22:48 ./
+drwxrwxr-x 4 cisco cisco 4096 Jan 15 22:48 ../
+-rw-rw-r-- 1 cisco cisco 4423 Jan 15 22:48 iosv1_config.2019-01-15@22:48:14
+-rw-rw-r-- 1 cisco cisco 4423 Jan 15 22:48 iosv2_config.2019-01-15@22:48:14
+cisco@server-1:~/cluer_ansible_2019$ more ios_config.yml
+---
+- name: Configure an ACL
+  hosts: routers
+  gather_facts: no
+  connection: network_cli
+
+  tasks:
+  - name: configure interface settings
+    ios_config:
+      lines:
+        - 10 permit ip host 192.0.2.1 any log
+        - 20 permit ip host 192.0.2.2 any log
+        - 30 permit ip host 192.0.2.3 any log
+        - 40 permit ip host 192.0.2.4 any log
+        - 50 permit ip host 192.0.2.5 any log
+      parents: ip access-list extended test
+      before: no ip access-list extended test
+      match: exact
+cisco@server-1:~/cluer_ansible_2019$ ansible-playbook ios_config.yml
+
+PLAY [Configure an ACL] ********************************************************
+
+TASK [configure interface settings] ********************************************
+changed: [iosv1]
+changed: [iosv2]
+
+PLAY RECAP *********************************************************************
+iosv1                      : ok=1    changed=1    unreachable=0    failed=0
+iosv2                      : ok=1    changed=1    unreachable=0    failed=0
+
+cisco@server-1:~/cluer_ansible_2019$ ll
+total 56
+drwxrwxr-x 4 cisco cisco 4096 Jan 15 22:48 ./
+drwxr-xr-x 8 cisco cisco 4096 Jan 15 22:30 ../
+-rw-rw-r-- 1 cisco cisco  248 Jan 15 22:24 ansible.cfg
+drwxrwxr-x 2 cisco cisco 4096 Jan 15 22:48 backup/
+-rw-rw-r-- 1 cisco cisco  332 Jan 15 22:24 config_backup.yml
+drwxrwxr-x 8 cisco cisco 4096 Jan 15 22:24 .git/
+-rw-rw-r-- 1 cisco cisco  453 Jan 15 22:32 hosts
+-rw-rw-r-- 1 cisco cisco  316 Jan 15 22:24 ios_backup.yml
+-rw-rw-r-- 1 cisco cisco  526 Jan 15 22:24 ios_config.yml
+-rw-rw-r-- 1 cisco cisco  310 Jan 15 22:47 ios_shcmd.yml
+-rw-rw-r-- 1 cisco cisco  479 Jan 15 22:42 nxos_config.yml
+-rw-rw-r-- 1 cisco cisco  327 Jan 15 22:36 nxos_shcmd.yml
+-rw-rw-r-- 1 cisco cisco  199 Jan 15 22:24 nxos_vlan.yml
+-rw-rw-r-- 1 cisco cisco   20 Jan 15 22:24 README.md
+cisco@server-1:~/cluer_ansible_2019$ ansible-playbook nxos_config.yml
+
+PLAY [NXOS Config module example] **********************************************
+
+TASK [Configuring ACL on NXOS] *************************************************
+changed: [nxos1]
+
+PLAY RECAP *********************************************************************
+nxos1                      : ok=1    changed=1    unreachable=0    failed=0
+
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ ll
+total 56
+drwxrwxr-x 4 cisco cisco 4096 Jan 15 22:48 ./
+drwxr-xr-x 8 cisco cisco 4096 Jan 15 22:30 ../
+-rw-rw-r-- 1 cisco cisco  248 Jan 15 22:24 ansible.cfg
+drwxrwxr-x 2 cisco cisco 4096 Jan 15 22:48 backup/
+-rw-rw-r-- 1 cisco cisco  332 Jan 15 22:24 config_backup.yml
+drwxrwxr-x 8 cisco cisco 4096 Jan 15 22:24 .git/
+-rw-rw-r-- 1 cisco cisco  453 Jan 15 22:32 hosts
+-rw-rw-r-- 1 cisco cisco  316 Jan 15 22:24 ios_backup.yml
+-rw-rw-r-- 1 cisco cisco  526 Jan 15 22:24 ios_config.yml
+-rw-rw-r-- 1 cisco cisco  310 Jan 15 22:47 ios_shcmd.yml
+-rw-rw-r-- 1 cisco cisco  479 Jan 15 22:42 nxos_config.yml
+-rw-rw-r-- 1 cisco cisco  327 Jan 15 22:36 nxos_shcmd.yml
+-rw-rw-r-- 1 cisco cisco  199 Jan 15 22:24 nxos_vlan.yml
+-rw-rw-r-- 1 cisco cisco   20 Jan 15 22:24 README.md
+cisco@server-1:~/cluer_ansible_2019$ more hosts
+#Ansible Inventory file
+
+[all:vars]
+ansible_connection=local
+
+[cisco:children]
+routers
+nxos
+
+[routers]
+iosv1 ansible_host=198.18.1.53
+iosv2 ansible_host=198.18.1.54
+
+[routers:vars]
+ansible_user=cisco
+ansible_ssh_pass=cisco
+ansible_connection=network_cli
+ansible_network_os=ios
+
+[nxos]
+nxos1 ansible_host=198.18.1.55
+
+[nxos:vars]
+ansible_user=cisco
+ansible_ssh_pass=cisco
+ansible_connection=network_cli
+ansible_network_os=nxos
+cisco@server-1:~/cluer_ansible_2019$ ll
+total 56
+drwxrwxr-x 4 cisco cisco 4096 Jan 15 22:48 ./
+drwxr-xr-x 8 cisco cisco 4096 Jan 15 22:30 ../
+-rw-rw-r-- 1 cisco cisco  248 Jan 15 22:24 ansible.cfg
+drwxrwxr-x 2 cisco cisco 4096 Jan 15 22:48 backup/
+-rw-rw-r-- 1 cisco cisco  332 Jan 15 22:24 config_backup.yml
+drwxrwxr-x 8 cisco cisco 4096 Jan 15 22:24 .git/
+-rw-rw-r-- 1 cisco cisco  453 Jan 15 22:32 hosts
+-rw-rw-r-- 1 cisco cisco  316 Jan 15 22:24 ios_backup.yml
+-rw-rw-r-- 1 cisco cisco  526 Jan 15 22:24 ios_config.yml
+-rw-rw-r-- 1 cisco cisco  310 Jan 15 22:47 ios_shcmd.yml
+-rw-rw-r-- 1 cisco cisco  479 Jan 15 22:42 nxos_config.yml
+-rw-rw-r-- 1 cisco cisco  327 Jan 15 22:36 nxos_shcmd.yml
+-rw-rw-r-- 1 cisco cisco  199 Jan 15 22:24 nxos_vlan.yml
+-rw-rw-r-- 1 cisco cisco   20 Jan 15 22:24 README.md
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ more ios_backup.yml
+---
+- name: backup router configurations
+  hosts: routers
+  connection: network_cli
+  gather_facts: no
+
+  tasks:
+    - name: gather ios_facts
+      ios_facts:
+      register: version
+
+    - debug:
+        msg: "{‌{version}}"
+
+    - name: Backup configuration
+      ios_config:
+        backup: yes
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ more ios_config.yml
+---
+- name: Configure an ACL
+  hosts: routers
+  gather_facts: no
+  connection: network_cli
+
+  tasks:
+  - name: configure interface settings
+    ios_config:
+      lines:
+        - 10 permit ip host 192.0.2.1 any log
+        - 20 permit ip host 192.0.2.2 any log
+        - 30 permit ip host 192.0.2.3 any log
+        - 40 permit ip host 192.0.2.4 any log
+        - 50 permit ip host 192.0.2.5 any log
+      parents: ip access-list extended test
+      before: no ip access-list extended test
+      match: exact
+cisco@server-1:~/cluer_ansible_2019$ more ios_shcmd.yml
+---
+- name: IOS command example playbook
+  hosts: routers
+  gather_facts: no
+
+  tasks:
+    - name: Run show command
+      ios_command:
+        commands:
+          - show version
+      register: cisco_output
+
+    - name: PRINT OUTPUT TO SCREEN
+      debug:
+        var: cisco_output.stdout_lines
+cisco@server-1:~/cluer_ansible_2019$ more  nxos_config.yml
+---
+- name: NXOS Config module example
+  hosts: nxos
+  gather_facts: no
+
+  tasks:
+    - name: Configuring ACL on NXOS
+      nxos_config:
+        lines:
+          - 10 permit ip 192.0.2.1/32 any log
+          - 20 permit ip 192.0.2.2/32 any log
+          - 30 permit ip 192.0.2.3/32 any log
+          - 40 permit ip 192.0.2.4/32 any log
+          - 50 permit ip 192.0.2.5/32 any log
+        parents: ip access-list test
+        before: no ip access-list test
+        match: exact
+cisco@server-1:~/cluer_ansible_2019$ more nxos_shcmd.yml
+---
+- hosts: nxos
+  name: backup router configurations
+  gather_facts: no
+
+  tasks:
+    - name: run multiple commands on remote nodes
+      nxos_command:
+        commands:
+          - show version
+
+      register: cisco_output
+
+    - name: PRINT OUTPUT TO SCREEN
+      debug:
+        var: cisco_output.stdout
+
+cisco@server-1:~/cluer_ansible_2019$
+cisco@server-1:~/cluer_ansible_2019$ more nxos_vlan.yml
+---
+- hosts: nxos
+  name: Configure Vlan
+  gather_facts: no
+
+  tasks:
+    - name: NXOS Vlan config
+      nxos_vlan:
+        vlan_id: 100
+        admin_state: up
+        name: ansible_vlan
+os_config.yml1:~/cluer_ansible_2019$ cisco@server-1:~/cluer_ansible_2019$ more i
+ settings
+    ios_config:
+      lines:
+        - 10 permit ip host 192.0.2.1 any log
+        - 20 permit ip host 192.0.2.2 any log
+        - 30 permit ip host 192.0.2.3 any log
+        - 40 permit ip host 192.0.2.4 any log
+        - 50 perm-bash: cisco@server-1:~/cluer_ansible_2019$: No such file or directory
+it ip hocisco@server-1:~/cluer_ansible_2019$ ---
+************************
+
+TASK [configure interface settings] ********************************************
+changed: [iosv1]
+changed: [iosv2]
+
+PLAY RECAP *********************************************************************
+iosv1                      : ok=1    changed=1    unreachable=0    failed=0
+iosv2                      : ok=1    changed=1    unreachable=0    failed=0
+
+cisco@server-1:~/cluer_ansible_2019$ ll
